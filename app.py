@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 def fetch_poster(movie_id):
     try:
-        url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=aea148cbe7d73e801770a60c387d402c&language=en-US"
+        url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={st.secrets['TMDB_API_KEY']}&language=en-US"
 
         headers = {
             "User-Agent": "Mozilla/5.0"
